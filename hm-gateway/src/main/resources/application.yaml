@@ -12,7 +12,6 @@ spring:
           uri: lb://item-service
           predicates:
             - Path=/items/**,/search/**
-          filters:
         - id: cart
           uri: lb://cart-service
           predicates:
